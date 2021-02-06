@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third Screen View Controller-->
+        <scene sceneID="r8Y-F2-li2">
+            <objects>
+                <viewController storyboardIdentifier="ThirdScreen" id="6sn-Gr-OFV" customClass="ThirdScreenViewController" customModule="LifeCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3in-Ha-aVU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlH-mN-JZj">
+                                <rect key="frame" x="20" y="315.5" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tlH-mN-JZj" firstAttribute="centerY" secondItem="3in-Ha-aVU" secondAttribute="centerY" id="My3-l3-IvC"/>
+                            <constraint firstItem="tlH-mN-JZj" firstAttribute="leading" secondItem="AcK-if-Jnq" secondAttribute="leading" constant="20" id="jB6-7X-3SC"/>
+                            <constraint firstItem="AcK-if-Jnq" firstAttribute="trailing" secondItem="tlH-mN-JZj" secondAttribute="trailing" constant="20" id="lkH-Fq-1iE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AcK-if-Jnq"/>
+                    </view>
+                    <connections>
+                        <outlet property="someLabel" destination="tlH-mN-JZj" id="vTx-d8-D66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dti-t5-Rtl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="125"/>
+        </scene>
+    </scenes>
+</document>

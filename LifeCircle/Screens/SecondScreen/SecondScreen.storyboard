@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second Screen-->
+        <scene sceneID="8BW-1L-bkK">
+            <objects>
+                <viewController storyboardIdentifier="SecondScreen" id="4Td-TN-pYT" customClass="SecondScreenViewController" customModule="LifeCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BoG-MT-5eE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnR-Pa-wE7">
+                                <rect key="frame" x="126.5" y="318.5" width="122" height="30"/>
+                                <state key="normal" title="go to third screen">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToThirdScreenButton:" destination="4Td-TN-pYT" eventType="touchUpInside" id="gDw-xs-iLr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NnR-Pa-wE7" firstAttribute="centerX" secondItem="BoG-MT-5eE" secondAttribute="centerX" id="MSp-kZ-o5e"/>
+                            <constraint firstItem="NnR-Pa-wE7" firstAttribute="centerY" secondItem="BoG-MT-5eE" secondAttribute="centerY" id="UAh-0V-nqy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bG-h5-ltk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second Screen" image="rectangle.3.offgrid" catalog="system" id="9Dy-rF-vrs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w55-Ow-C6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="-59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle.3.offgrid" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
