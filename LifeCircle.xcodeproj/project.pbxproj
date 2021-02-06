@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E77AF48D25CF02C000911472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF48C25CF02C000911472 /* AppDelegate.swift */; };
 		E77AF48F25CF02C000911472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF48E25CF02C000911472 /* SceneDelegate.swift */; };
-		E77AF49125CF02C000911472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF49025CF02C000911472 /* ViewController.swift */; };
 		E77AF49425CF02C000911472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77AF49225CF02C000911472 /* Main.storyboard */; };
 		E77AF49625CF02C500911472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77AF49525CF02C500911472 /* Assets.xcassets */; };
 		E77AF49925CF02C500911472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77AF49725CF02C500911472 /* LaunchScreen.storyboard */; };
+		E77AF4A425CF083C00911472 /* SecondScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77AF4A325CF083C00911472 /* SecondScreen.storyboard */; };
+		E77AF4A725CF088000911472 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF4A625CF088000911472 /* SecondScreenViewController.swift */; };
+		E77AF4AA25CF090200911472 /* ThirdScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77AF4A925CF090200911472 /* ThirdScreen.storyboard */; };
+		E77AF4AC25CF091D00911472 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF4AB25CF091C00911472 /* ThirdScreenViewController.swift */; };
+		E77AF4B025CF1A8900911472 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AF4AF25CF1A8900911472 /* FirstScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E77AF48925CF02C000911472 /* LifeCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77AF48C25CF02C000911472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77AF48E25CF02C000911472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E77AF49025CF02C000911472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E77AF49325CF02C000911472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77AF49525CF02C500911472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77AF49825CF02C500911472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77AF49A25CF02C500911472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77AF4A325CF083C00911472 /* SecondScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondScreen.storyboard; sourceTree = "<group>"; };
+		E77AF4A625CF088000911472 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		E77AF4A925CF090200911472 /* ThirdScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdScreen.storyboard; sourceTree = "<group>"; };
+		E77AF4AB25CF091C00911472 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		E77AF4AF25CF1A8900911472 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		E77AF48B25CF02C000911472 /* LifeCircle */ = {
 			isa = PBXGroup;
 			children = (
+				E77AF4A025CF075900911472 /* SupportingFiles */,
+				E77AF4A125CF07BC00911472 /* Screens */,
+				E77AF49525CF02C500911472 /* Assets.xcassets */,
+			);
+			path = LifeCircle;
+			sourceTree = "<group>";
+		};
+		E77AF4A025CF075900911472 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				E77AF48C25CF02C000911472 /* AppDelegate.swift */,
 				E77AF48E25CF02C000911472 /* SceneDelegate.swift */,
-				E77AF49025CF02C000911472 /* ViewController.swift */,
-				E77AF49225CF02C000911472 /* Main.storyboard */,
-				E77AF49525CF02C500911472 /* Assets.xcassets */,
 				E77AF49725CF02C500911472 /* LaunchScreen.storyboard */,
 				E77AF49A25CF02C500911472 /* Info.plist */,
 			);
-			path = LifeCircle;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E77AF4A125CF07BC00911472 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E77AF4A825CF08D300911472 /* ThridScreen */,
+				E77AF4A525CF084E00911472 /* SecondScreen */,
+				E77AF4A225CF07D400911472 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E77AF4A225CF07D400911472 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E77AF49225CF02C000911472 /* Main.storyboard */,
+				E77AF4AF25CF1A8900911472 /* FirstScreenViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E77AF4A525CF084E00911472 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E77AF4A325CF083C00911472 /* SecondScreen.storyboard */,
+				E77AF4A625CF088000911472 /* SecondScreenViewController.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		E77AF4A825CF08D300911472 /* ThridScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E77AF4A925CF090200911472 /* ThirdScreen.storyboard */,
+				E77AF4AB25CF091C00911472 /* ThirdScreenViewController.swift */,
+			);
+			path = ThridScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +179,9 @@
 			files = (
 				E77AF49925CF02C500911472 /* LaunchScreen.storyboard in Resources */,
 				E77AF49625CF02C500911472 /* Assets.xcassets in Resources */,
+				E77AF4A425CF083C00911472 /* SecondScreen.storyboard in Resources */,
 				E77AF49425CF02C000911472 /* Main.storyboard in Resources */,
+				E77AF4AA25CF090200911472 /* ThirdScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77AF49125CF02C000911472 /* ViewController.swift in Sources */,
+				E77AF4A725CF088000911472 /* SecondScreenViewController.swift in Sources */,
+				E77AF4AC25CF091D00911472 /* ThirdScreenViewController.swift in Sources */,
 				E77AF48D25CF02C000911472 /* AppDelegate.swift in Sources */,
 				E77AF48F25CF02C000911472 /* SceneDelegate.swift in Sources */,
+				E77AF4B025CF1A8900911472 /* FirstScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGH5RSM234;
-				INFOPLIST_FILE = LifeCircle/Info.plist;
+				INFOPLIST_FILE = LifeCircle/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGH5RSM234;
-				INFOPLIST_FILE = LifeCircle/Info.plist;
+				INFOPLIST_FILE = LifeCircle/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
